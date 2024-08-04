@@ -6,6 +6,9 @@ body {
   font-family: "nanumsquare";
 }
 
+span {
+  cursor: pointer;
+}
 .black-nav {
   background-color: black;
   width: 100%;
