@@ -12,18 +12,16 @@ function App() {
   ]);
   let [heart, setHeart] = useState(0);
 
+  function changeTitle() {
+    setTitle(["여자 코트 추천", "강남 우동 맛집", "자바 독학"]);
+  }
+
   return (
     <div className="App">
       <div className="black-nav">
         <div>개발 Blog</div>
       </div>
-      <button
-        onClick={() => {
-          setTitle(["여자코드 추천", "강남 우동 맛집", "자바 독학"]);
-        }}
-      >
-        button
-      </button>
+      <button onClick={changeTitle}>button</button>
       <div className="list">
         <h3>
           {title[0]}
