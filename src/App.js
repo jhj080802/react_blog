@@ -13,7 +13,9 @@ function App() {
   let [heart, setHeart] = useState(0);
 
   function changeTitle() {
-    setTitle(["여자 코트 추천", "강남 우동 맛집", "자바 독학"]);
+    var newArray = [...title];
+    newArray[0] = "여자 코트 추천";
+    setTitle(newArray);
   }
 
   return (
