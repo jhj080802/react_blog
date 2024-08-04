@@ -3,6 +3,7 @@ import React from "react";
 // import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
+import Modal from "./page/modal";
 
 function App() {
   let [title, setTitle] = useState([
@@ -50,17 +51,7 @@ function App() {
         <hr />
       </div>
 
-      <Modal></Modal>
-    </div>
-  );
-}
-
-function Modal() {
-  return (
-    <div className="modal">
-      <h2>제목</h2>
-      <p>날짜</p>
-      <p>상세내용</p>
+      <Modal />
     </div>
   );
 }
