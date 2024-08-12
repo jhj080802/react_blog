@@ -7,9 +7,18 @@ export default function Input2() {
     tel: "",
   });
 
+  const { name, email, tel } = inputs;
+
   const onChange = (e) => {
     const value = e.target.value;
     const id = e.target.id;
+
+    setInputs({
+      // 복사
+      ...inputs,
+      // 업데이트
+      [id]: value,
+    });
   };
 
   return (
@@ -26,6 +35,9 @@ export default function Input2() {
         <label>전화번호</label>
         <input type="tel" id="tel" value={tel} onChange={onChange} />
       </div>
+      <p>이름 : {name}</p>
+      <p>이메일 : {email}</p>
+      <p>전화번호: {tel}</p>
     </div>
   );
 }
