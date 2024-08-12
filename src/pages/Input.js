@@ -9,7 +9,7 @@ export default function Input() {
 
   return (
     <div>
-      <input type="text" value="" onChange={onChange} />
+      <input type="text" value={txtValue} onChange={onChange} />
       <br />
       <p>{txtValue}</p>
     </div>
